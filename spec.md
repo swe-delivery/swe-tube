@@ -4,7 +4,7 @@
 
 **Visitors** are anonymous. When we add auth later, we can allow them to create a user account which persists their profile in the `User` table
 
- - As a visitors, I can see a list of all previously shared **resources**
+ - As a visitor, I can see a list of all previously shared **resources**
  - As a visitor, I can filter the list by **tags**
  - As a visitor, I can mark a resource as **liked**
  - As a visitor, I can mark a resource as **completed**
