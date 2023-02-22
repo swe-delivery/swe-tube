@@ -21,6 +21,8 @@ erDiagram
     RESOURCE {
         string id PK
         string sharerId FK
+        string description
+        string imageUrl
     }
     TAG {
         string id  PK
