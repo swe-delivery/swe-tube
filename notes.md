@@ -34,3 +34,25 @@ When adding a new feature, we
  3. PR into main in order to deploy
 
 This is a realistic work flow which demonstrates the purpose of having branches more saliently than simply `main -> feature`. It allows us to talk about CI/CD when we introduce testing.
+
+## Specification and design
+
+### Class diagrams
+
+It is worthwhile making it clear that class diagrams aren't necessarily a 1:1 map of "things with the `class` keyword" in your project. It creates problems when we reach database week, and we're writing database models rather than classes. Apprentices then feel like class diagrams don't apply.
+
+```mermaid
+classDiagram
+
+class Post
+Post : +String content
+Post : +Int likes
+
+class Tag
+Tag : +String name
+Tag : +String colour
+
+Post "*" -- "*" Tag
+```
+
+This models the structure of our data in the sense that it outlines the relationships between different parts of the system, even if those parts aren't being represented by `class Post {}` in our code. To support this, we should keep using class diagrams regularly throughout our work once they have been introduced.
