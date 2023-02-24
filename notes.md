@@ -26,14 +26,14 @@ git remote set-head origin -a
 
 The preferred git flow is to have
 ```
-main -> development -> feature
+main -> develop -> feature
 ```
 When adding a new feature, we
- 1. create a branch for that feature.
- 2. PR into `development` in order to run tests, linting and code review (this could also deploy to a staging environment)
+ 1. create a branch for that feature
+ 2. PR into `develop` in order to trigger tests, linting and code review (this could also deploy to a staging environment)
  3. PR into main in order to deploy
 
-This is a realistic work flow which demonstrates the purpose of having branches more saliently than simply `main -> feature`. It allows us to talk about CI/CD when we introduce testing.
+This is a realistic work flow which demonstrates the purpose of having branches more saliently than simply `main -> feature`. It allows us to talk about CI/CD when we introduce testing. It will support apprentices working collaboratively on projects.
 
 ## Specification and design
 
