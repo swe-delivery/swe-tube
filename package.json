@@ -1,0 +1,28 @@
+{
+  "name": "swe-tube",
+  "version": "0.1.0",
+  "description": "Resources for SWE Apprentices",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimonian/swe-tube.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nimonian/swe-tube/issues"
+  },
+  "homepage": "https://github.com/nimonian/swe-tube#readme",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "jest": "^29.4.3",
+    "prettier": "^2.8.4"
+  }
+}
