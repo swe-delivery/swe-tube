@@ -1,4 +1,4 @@
-const { afterEach, beforeEach, describe, expect, it, jest } = require('@jest/globals');
+const { afterEach, beforeEach, describe, expect, it } = require('@jest/globals');
 
 const getAllResources = require('../../../lib/queries/get-all-resources.js');
 const getResources = require('./get-resources.js');
