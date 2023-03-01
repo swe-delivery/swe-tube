@@ -5,7 +5,16 @@ module.exports = {
 		node: true
 	},
 	extends: ['eslint:recommended', 'prettier'],
-	overrides: [],
+	overrides: [
+		Object.assign(
+			{
+				files: ['**/*.test.js', '**/*.spec.js'],
+				env: { jest: true },
+				plugins: ['jest']
+			},
+			require('eslint-plugin-jest').configs.recommended
+		)
+	],
 	parserOptions: {
 		ecmaVersion: 'latest'
 	},
