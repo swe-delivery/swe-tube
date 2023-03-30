@@ -4,11 +4,15 @@
 	"scripts": {
 		"dev": "node src/index.js",
 		"dev:netlify": "netlify functions:serve",
-		"test": "jest src/",
-		"test:e2e": "jest test/"
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write .",
+    "test": "jest src/",
+    "test:e2e": "jest test/"
 	},
 	"devDependencies": {
 		"@netlify/functions": "^1.4.0",
+    "@swe-tube/eslint-config": "^0.1.0",
+    "eslint": "^8.35.0",
 		"@types/express": "^4.17.17",
 		"cors": "^2.8.5",
 		"express": "^4.18.2",
